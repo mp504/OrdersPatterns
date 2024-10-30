@@ -21,7 +21,7 @@ namespace OrdersPatterns.Objects
 
         public void deliever(string destinationLocation, string senderLocation, Pizza pizza)
         {
-            Console.WriteLine($"delievering {pizza.ToString()} From Location {senderLocation} To Location {destinationLocation}");
+            Console.WriteLine($"delievering {pizza.ToString()} From Location {senderLocation} To Location {destinationLocation} using ship");
         }
     }
 }

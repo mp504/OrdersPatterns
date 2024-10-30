@@ -1,6 +1,7 @@
 ﻿using OrdersPatterns.DeliveryMethod;
 using OrdersPatterns.Objects;
 using OrdersPatterns.Orders;
+using System.Security.Cryptography.X509Certificates;
 
 
 public class Program
@@ -25,14 +26,15 @@ public class Program
         Console.WriteLine(pizza.ToString());
         Console.WriteLine(pizza1.ToString());
         Console.WriteLine();
-            
 
 
-        ITransport truck = DelieveryFactory.DelieveryMethod("plane");
 
-        truck.deliever("House", "Restaurant", pizza);
-        truck.deliever("House", "Restaurant", pizza1);
+        OrderManager orderManager = OrderManager.Instance;
 
+       
+        OrderManager orderManager1 = OrderManager.Instance;
+        orderManager.deliever("alrimal", "albaik", pizza, "truck");
+        orderManager1.deliever("house", "mac", pizza1, "truck");
     }
 
 

@@ -19,7 +19,7 @@ namespace OrdersPatterns.Objects
 
         public void deliever(string destinationLocation, string senderLocation ,Pizza pizza)
         {
-            Console.WriteLine($"delievering {pizza.ToString()} From Location {SenderLocation} To Location {DestenationLocation}");
+            Console.WriteLine($"delievering {pizza.ToString()} From Location {SenderLocation} To Location {DestenationLocation} using plane");
         }
 
 
